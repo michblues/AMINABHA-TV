@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AMINABA TV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AMINABA TV</title>
+</head>
+<body>
+  <div class="hero">
+    <div class="form-box">
+      <div class="botton-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">login</button>
+        <button type="button" class="toggle-btn" onclick="register()">register</button>
+      </div>
+      <div class="social-icon">
+        <a href="https://www.youtube.com/@Aminabhatv">
+        <img src="yt.png" alt="social-icon">
+        </a>
+        <a href="https://www.instagram.com/aminabhatv?igsh=MTBsemRyMXZxNW1zbQ%3D%3D&utm_source=qr">
+        <img src="in ig.png" alt="social-icon"> 
+        </a>
+        <a href="https://www.tiktok.com/@aminabhacomedy?_t=ZM-8uSU1o9AmfN&_r=1">
+        <img src="tik.png" alt="social-icon">
+        </a>
+        <a href="https://wa.me/+233240683461">
+        <img src="whatsapp-transparent-logo-20.png" alt="social-icon"> 
+        </a>   
+      </div>
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+      </form>
+      <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="email id" class="input-field" placeholder="email Id" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div> 
+  </div>
+  <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+    function login(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0";
+    }
+  </script>
+</body>
+</html>
